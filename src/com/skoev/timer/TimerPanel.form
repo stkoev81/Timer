@@ -1,0 +1,770 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JFrame" name="lockSettingsFrame">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lockSettingsTitleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lockSettingsScrollPane" alignment="0" min="-2" pref="913" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="multiplePressUncheckedLabel" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="lockRepeatedly" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="743" max="-2" attributes="0"/>
+                          <Component id="closeLockSettings" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="keysPressedLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="keysPressed" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="saveShortcut" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="cancelRecording" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="1">
+                          <Component id="currentShortcutLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="currentShortcut" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="testShortcut" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="resetShortcut" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="beginRecording" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="lockSettingsTitleLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="lockSettingsScrollPane" min="-2" pref="377" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="lockRepeatedly" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="multiplePressUncheckedLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="currentShortcutLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="currentShortcut" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="testShortcut" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="resetShortcut" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="beginRecording" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="keysPressedLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="keysPressed" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="saveShortcut" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cancelRecording" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="closeLockSettings" alignment="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="21" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="lockSettingsTitleLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="DejaVu Sans" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Screen lock settings"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="keysPressed">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="keysPressed"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="resetShortcut">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Reset default"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="resetShortcutActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="saveShortcut">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Save shorctut"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveShortcutActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="beginRecording">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Begin recording new shorcut"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="beginRecordingActionPerformed"/>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="beginRecordingKeyPressed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="currentShortcut">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="currentShortcut"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="cancelRecording">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cancel"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelRecordingActionPerformed"/>
+          </Events>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="lockSettingsScrollPane">
+          <Properties>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="opaque" type="boolean" value="false"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="lockSettingsTextArea">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="DejaVu Sans" size="14" style="0"/>
+                </Property>
+                <Property name="lineWrap" type="boolean" value="true"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="This application programmatically &quot;presses&quot; the keyboard shourcut keys for screen locking in order to lock your screen during the break. The key combination differs with operating systems and user settings. For example, Windows uses Windows-L, Mac uses Ctrl-Shift-Eject, and many Linux distributions use Ctrl-Alt-L. &#xa;&#xa;The default keyboard shortcut here is Ctrl-Alt-L, which is what works on my system. If your system has a different shortcut, please enter it by following these steps: &#xa;1) Press &quot;Begin recording new shortcut&quot;&#xa;2) Enter the key combination, pressing one key at a time. Do not press all the keys together, as that will just lock your screen and the program won&apos;t be able to capture the keystrokes. If one of the keys pressed opens another window  or menu (e.g. the Windows key) or if it otherwise deselects this program&apos;s window (e.g. Alt key), simply select this program&apos;s window again by clicking on it with the mouse before pressing the next key.&#xa;3) Verify that &quot;Keys pressed:&quot; shows the intended shortcut; if you made a mistake, repeat steps 1) and 2). Then, press &quot;Save shortcut&quot;.  &#xa;4) Press &quot;Test current shortcut&quot; to make sure that it actually locks the screen. &#xa;&#xa;NOTE: I have successfully tested the screen locking shortcuts on Ubuntu Linux 10.04 and Windows XP. However, screen locking may not work on all operating systems. Some OS&apos;s may not let programs activate certain keyboard shorcuts for security reasons. For example, in Windows 7 (unlike XP) the OS prevents this program from using the Windows-L shortcut. In that case, you can find a workaround by using some other keyboard shortcut to make your computer inaccessible during the break period. For example, in Windows 7, you can create a keyboard shortcut to start the screensaver and use that instead of locking the screen (I have successfully tested that approach with Windows 7). "/>
+                <Property name="wrapStyleWord" type="boolean" value="true"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="null"/>
+                </Property>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="testShortcut">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Test current shorcut"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="testShortcutActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="closeLockSettings">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Close window"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="closeLockSettingsActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="currentShortcutLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Current keyboard shortcut for locking screen: "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="keysPressedLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Keys pressed:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="lockRepeatedly">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Press shortcut multiple times (once every second) during break. This prevents user from unlocking screen until break is over."/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lockRepeatedlyActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="multiplePressUncheckedLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="If left unchecked, the keyboard shortcut will be pressed only once (at beginning of break). "/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="aboutFrame">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="closeAbout" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" min="-2" pref="515" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="35" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="595" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="closeAbout" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="closeAbout">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Close window"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="closeAboutActionPerformed"/>
+          </Events>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="aboutTextArea">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="DejaVu Sans" size="16" style="0"/>
+                </Property>
+                <Property name="lineWrap" type="boolean" value="true"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="About this application: &#xa;&#xa;Most people who work at a computer all day will agree that it&apos;s good to take breaks. It allows you to relax your eyes, get the blood circulation going in your legs,  and regain mental sharpness. &#xa;&#xa;However, it takes a lot of discipline to take regular breaks when you are doing engaging work. Even if you have a timer or alarm set up, you are likely to ignore it or snooze it and keep going. This application is a timer that is impossible to ignore. After a pre-set work period elapses, it locks your computer screen and optionally prevents you from unlocking (by locking it again if you unlock it) until a pre-set break period elapses, thereby forcing you to take a break. &#xa;&#xa;The application is written in Java, so it is cross-platform. It can be run on any computer that has Java installed. &#xa;&#xa;So how do you regain control of your computer in the event that you accidentally set too long of a break period (with the unlock prevention option) and don&apos;t want to wait for it to end? In Linux, you can use Ctrl-Alt-F1 to switch to a text terminal and kill the java process. In Windows, I&apos;m not aware of a way to do it other than restarting your computer -- so be careful when entering the break period.&#xa;&#xa;Created by: Stefan Koev (stefan.koev@skoev.com)  &#xa;Last updated: 27 December 2011&#xa;&#xa;"/>
+                <Property name="wrapStyleWord" type="boolean" value="true"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="null"/>
+                </Property>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JFrame" name="soundSettingsFrame">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="soundSettingsTitleLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="561" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="useToolkitBeep" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="useBeeper" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="soundFrequencyLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                          <Component id="soundFrequency" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="soundFreqVerLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="soundDurationLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="soundDuration" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="soundDurVerLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace pref="238" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                  <Component id="saveChanges" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="resetSound" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="testSound" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="closeSoundSettings" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="193" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="soundSettingsScrollPane" min="-2" pref="667" max="-2" attributes="0"/>
+                  <EmptySpace pref="23" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="useSampledAudio" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="335" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="soundSettingsTitleLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="soundSettingsScrollPane" min="-2" pref="180" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                  <Component id="useSampledAudio" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="soundFrequencyLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="soundFrequency" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="soundFreqVerLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="soundDurationLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="soundDuration" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                  <Component id="soundDurVerLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="useToolkitBeep" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="useBeeper" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="saveChanges" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="resetSound" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="testSound" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="closeSoundSettings" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="soundSettingsTitleLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="DejaVu Sans" size="18" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Sound settings"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="useSampledAudio">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Use java sampled audio API (synthesize own sound)"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="useToolkitBeep">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Use java.awt.Toolkit.beep() method (sounds system alert tone if configured)"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="useBeeper">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Use motherboard beeper (prints bell character 0x0007 to terminal)"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="saveChanges">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Save changes"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveChangesActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="soundFrequencyLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sound frequency (Hz)"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="soundFrequency">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="2000"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[57, 27]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="soundDurationLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sound duration (milliseconds)"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="soundDuration">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="200"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[57, 27]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="resetSound">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Reset to defaults"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="resetSoundActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="closeSoundSettings">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Close window"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="closeSoundSettingsActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="testSound">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Test sound"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="testSoundActionPerformed"/>
+          </Events>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="soundSettingsScrollPane">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="soundSettingsTextArea">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="DejaVu Sans" size="16" style="0"/>
+                </Property>
+                <Property name="lineWrap" type="boolean" value="true"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="Getting sound to work across platforms is difficult. For this reason, I have included 3 different options below for playing the sound alert. At least one of them should work with your OS and configuration. &#xa;&#xa;The first option is most likely to work. It also lets you choose the sound frequency and duration. If it doesn&apos;t work and you have other sound-producing programs running on your computer, exit those programs and try again. Depending on your sound mixer, it may not be able to work while other programs are using the mixer."/>
+                <Property name="wrapStyleWord" type="boolean" value="true"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="null"/>
+                </Property>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="opaque" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="soundFreqVerLabel">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" id="red" palette="1" red="ff" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="soundFreqVerLabel"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="soundDurVerLabel">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" id="red" palette="1" red="ff" type="palette"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="soundDurVerLabel"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </NonVisualComponents>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="instructionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="mainScreenTitle" alignment="0" min="-2" pref="678" max="-2" attributes="1"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="aboutButton" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
+                              <Component id="startButton" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="pauseButton" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="timeInputVerLabel" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="workTimeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                      <Component id="breakTimeLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="workTimeInput" alignment="1" min="-2" pref="57" max="-2" attributes="0"/>
+                                      <Component id="breakTimeInput" alignment="1" min="-2" pref="57" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="workTimeRemainingLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="breakTimeRemainingLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="workTimeOutput" alignment="1" min="-2" pref="44" max="-2" attributes="0"/>
+                                  <Component id="breakTimeOutput" min="-2" pref="44" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="playSoundBreaktime" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="soundSettingsButton" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              <Component id="settingsWarningLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="lockSettingsButton" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="lockOnBreaktime" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="playSoundWorktime" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="loopTimer" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="mainScreenTitle" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="instructionLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="aboutButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="pauseButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="startButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Component id="timeInputVerLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="workTimeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="workTimeRemainingLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="workTimeInput" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="workTimeOutput" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="breakTimeLabel" min="-2" max="-2" attributes="0"/>
+                  <Component id="breakTimeRemainingLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="breakTimeInput" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="breakTimeOutput" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Component id="lockOnBreaktime" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="settingsWarningLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lockSettingsButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="playSoundBreaktime" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="soundSettingsButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="playSoundWorktime" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="loopTimer" min="-2" pref="23" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="startButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="START"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="startButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="workTimeLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Work time (s)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="workTimeOutput">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="workTimeRemainingLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Time remaining (s)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="workTimeInput">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="loopTimer">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Loop endlessly"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="playSoundBreaktime">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Play sound when it&apos;s time for a break"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="lockOnBreaktime">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Lock screen when it&apos;s time for a break*"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="mainScreenTitle">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="DejaVu Sans" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="A timer that can lock your computer screen and force you to take a break "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="pauseButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="PAUSE"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pauseButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="breakTimeInput">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="breakTimeLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Break time (s)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="breakTimeRemainingLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Time remaining (s)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="playSoundWorktime">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Play sound when break is over"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="breakTimeOutput">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="settingsWarningLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="*For this to work, you must verify screen locking settings first"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="lockSettingsButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Lock settings"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lockSettingsButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="soundSettingsButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sound settings"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="soundSettingsButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="aboutButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="About"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="aboutButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="instructionLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Choose settings and press start ... "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="timeInputVerLabel">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" id="red" palette="1" red="ff" type="palette"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="timeInputVerLabel"/>
+        <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

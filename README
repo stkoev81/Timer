@@ -1,0 +1,26 @@
+This application is a GUI timer that can optionally lock your computer screen and force you to take a break. 
+
+Most people who work at a computer all day will agree that it's good to take breaks. This allows you to relax your eyes, get the blood circulation going in your legs,  and regain mental sharpness. However, it takes a lot of discipline to take regular breaks when you are doing engaging work. Even if you have a timer or alarm set up, you are likely to ignore it or snooze it and keep going. This application is a timer that is impossible to ignore. After a pre-set work period elapses, it locks your computer screen and optionally prevents you from unlocking (by locking it again if you unlock it) until a pre-set break period elapses, thereby forcing you to take a break. It can also play alert sounds when a break begins and ends. 
+
+Compatibility: 
+The application is written in Java, so it is cross-platform. It can be run on any computer that has Java 6 or later installed, regardless of operating system. It has been tested on Ubuntu Linux 10.04, Windows XP, and Windows 7.There are several settings available to configure the screen-locking and playing of alert sound to work on your machine.  
+
+How it works: 
+This application programmatically "presses" the keyboard shourcut keys for screen locking in order to lock your screen when it's time for a break. If the unlock prevention options is chosen, it keeps pressing them every 1 second during the break so that the user can't get back to work until the break expires. The key combination differs with operating systems and user settings. For example, Windows uses Windows-L, Mac uses Ctrl-Shift-Eject, and many Linux distributions use Ctrl-Alt-L by default. Once the application is started, you needs to change the screen-locking shortcut to the one for your particular system. 
+
+Running the program: 
+- no installation is necessary if you already have Java 6 installed
+- Depending on your system, it may just work by double-clicking the timer.jar file. If not, from the command line type "java -jar timer.jar". This assumes that java is added to your system path, and the file "timer.jar" is downloaded to the current command line directroy. 
+- In the GUI window, choose settings and start timer
+
+Troubleshooting: 
+So how do you regain control of your computer in the event that you accidentally set too long of a break period (with the  unlock prevention option) and don't want to wait for it to end? In Linux, you can use Ctrl-Alt-F1 to switch to a text terminal and kill the java process. In Windows, I'm not aware of a way to do it other than restarting your computer -- so be careful when entering the break period.
+
+Created by: Stefan Koev (stefan.koev@skoev.com)  
+Last updated: 27 December 2011
+
+
+
+
+
+
