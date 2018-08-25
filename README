@@ -16,8 +16,7 @@ Running the program:
 Troubleshooting: 
 So how do you regain control of your computer in the event that you accidentally set too long of a break period (with the  unlock prevention option) and don't want to wait for it to end? In Linux, you can use Ctrl-Alt-F1 to switch to a text terminal and kill the java process. In Windows, I'm not aware of a way to do it other than restarting your computer -- so be careful when entering the break period.
 
-Created by: Stefan Koev (stefan.koev@skoev.com)  
-Last updated: 27 December 2011
+
 
 
 
